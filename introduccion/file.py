@@ -1,13 +1,13 @@
-num1 = 42
-num2 = 2.3
-boolean = True
-string = 'Hello World'
+num1 = 42 #Numbers
+num2 = 2.3 #Float
+boolean = True # Boolean
+string = 'Hello World' #data types - string
 pizza_toppings = ['Pepperoni', 'Sausage', 'Jalepenos', 'Cheese', 'Olives']
 person = {'name': 'John', 'location': 'Salt Lake', 'age': 37, 'is_balding': False}
 fruit = ('blueberry', 'strawberry', 'banana')
-print(type(fruit))
+print(type(fruit)) #Type check
 print(pizza_toppings[1])
-pizza_toppings.append('Mushrooms')
+pizza_toppings.append('Mushrooms') #list - add value
 print(person['name'])
 person['name'] = 'George'
 person['eye_color'] = 'blue'
@@ -18,7 +18,7 @@ if num1 > 45:
 else:
     print("It's lower")
 
-if len(string) < 5:
+if len(string) < 5:  #lenght check
     print("It's a short word!")
 elif len(string) > 15:
     print("It's a long word!")
@@ -50,19 +50,19 @@ for topping in pizza_toppings:
     if topping == 'Olives':
         break
 
-def print_hello_ten_times():
+def print_hello_ten_times(): #function parameter
     for num in range(10):
         print('Hello')
 
 print_hello_ten_times()
 
-def print_hello_x_times(x):
+def print_hello_x_times(x): #function
     for num in range(x):
         print('Hello')
 
 print_hello_x_times(4)
 
-def print_hello_x_or_ten_times(x = 10):
+def print_hello_x_or_ten_times(x = 10): #function
     for num in range(x):
         print('Hello')
 
@@ -71,10 +71,10 @@ print_hello_x_or_ten_times(4)
 
 
 """
-Bonus section
+Bonus section #comment - multiple line
 """
-
-# print(num3)
+""" Comments - single line
+# print(num3) 
 # num3 = 72
 # fruit[0] = 'cranberry'
 # print(person['favorite_team'])
@@ -82,3 +82,4 @@ Bonus section
 #   print(boolean)
 # fruit.append('raspberry')
 # fruit.pop(1)
+"""

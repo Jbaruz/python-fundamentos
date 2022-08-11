@@ -11,23 +11,23 @@ pizza_toppings.append('Mushrooms') #list - add value
 print(person['name'])
 person['name'] = 'George'
 person['eye_color'] = 'blue'
-print(fruit[2])
+print(fruit[2]) #string
 
-if num1 > 45:
+if num1 > 45: #conditional
     print("It's greater")
 else:
     print("It's lower")
 
-if len(string) < 5:  #lenght check
+if len(string) < 5:  ##conditional -lenght check
     print("It's a short word!")
 elif len(string) > 15:
     print("It's a long word!")
 else:
     print("Just right!")
 
-for x in range(5):
+for x in range(5):   #for loop
     print(x)
-for x in range(2,5):
+for x in range(2,5): 
     print(x)
 for x in range(2,10,3):
     print(x)
@@ -36,19 +36,19 @@ while(x < 5):
     print(x)
     x += 1
 
-pizza_toppings.pop()
-pizza_toppings.pop(1)
+pizza_toppings.pop() #delete value
+pizza_toppings.pop(1) #delete value(1)
 
 print(person)
-person.pop('eye_color')
+person.pop('eye_color') #dictionary - delete value
 print(person)
 
-for topping in pizza_toppings:
+for topping in pizza_toppings: #for loop -start
     if topping == 'Pepperoni':
-        continue
+        continue #continue
     print('After 1st if statement')
     if topping == 'Olives':
-        break
+        break #break
 
 def print_hello_ten_times(): #function parameter
     for num in range(10):

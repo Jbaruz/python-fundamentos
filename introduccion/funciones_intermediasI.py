@@ -64,3 +64,23 @@ estudiantes = [
 iterateDictionary2('first_name', estudiantes)
 print("*" * 80)
 iterateDictionary2('last_name', estudiantes) 
+
+"""4. Iterar a través de un diccionarios con valores de lista
+    Crea una función printInfo (some_dict) que, dado un diccionario cuyos valores son
+    todos listas, imprima el nombre de cada clave junto con el tamaño de su lista, y luego
+    imprima los valores asociados dentro de la lista del cada clave. Por ejemplo:"""
+
+dojo = { 'ubicaciones': ['San Jose', 'Seattle', 'Dallas', 'Chicago', 'Tulsa', 'DC', 'Burbank'],
+        'instructores': ['Michale', 'Amy', 'Eduardo', 'Josh', 'Graham', 'Patrick','Minh', 'Devon']
+        }
+
+def printInfo(some_list):
+    for x in (some_list):
+        print(len(some_list[x])) #** imprime la longitud de la lista dentro del diccionario
+        print(x.upper()) #** Imprime la mayuscula del primero
+        for cityInstructores in (some_list[x]):
+            print(cityInstructores) #** Imprime las ciudades e instructores en final
+            
+            
+printInfo(dojo)
+

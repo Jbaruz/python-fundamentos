@@ -6,3 +6,5 @@
 - functions_basic_1.py
 - function_basicii.py
 - funciones_intermediasI.py (**Core**)
+- OPP/usuario.py
+- OPP/encadenar_metodo.py

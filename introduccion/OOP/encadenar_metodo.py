@@ -29,7 +29,6 @@ class Usuario:
         else:
             self.balance_cuenta -= amount
         usuario_destino.balance_cuenta += amount
-
         return self
 
 michael = Usuario("Michael", "michael@gmail.com")

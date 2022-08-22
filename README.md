@@ -1,5 +1,6 @@
 ## Fundamentals Python
 
 - Introduction to Python (working on that currently).
+- OOP
 
-*note: whether you want to see the documentation get in to Introduction.*
+*note: I added .gitignore to avoid waste archives on Github.

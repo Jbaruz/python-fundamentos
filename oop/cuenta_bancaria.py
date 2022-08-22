@@ -23,11 +23,17 @@ class CuentaBancaria:
         print("Balance:", self.balance)
         return self
         
-# tu código aquí
+# generar_interés(self): aumenta el balance de la cuenta por el balance actual * la tasa
+#de interés (siempre que el balance sea positivo)
     def generar_interes(self):
-        self.balance = self.balance * self.tasa_interes
+        print("Generar interes")
+        self.nuevo_interes = self.balance * self.tasa_interes
+        print(f"Interese adquirido: {self.nuevo_interes}")
+        self.balance = self.balance + self.tasa_interes
         return self
-# tu código aquí
+
+# BONUS NINJA: utiliza un método de clase para imprimir todas las instancias de la
+#información de una cuenta bancaria
 
 juan = CuentaBancaria("Juan", "juan@gmail.com")
 aisha = CuentaBancaria("Aisha", "aisha@gmail.com")

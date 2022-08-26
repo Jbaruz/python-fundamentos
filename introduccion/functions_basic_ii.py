@@ -23,6 +23,16 @@ def xyz(a,b):
 xyz(a,b)
 print(b)
 
+# Mejor opcion.
+
+def imp_dev(listNum):
+    print(listNum[0])
+    return listNum[1]
+
+result = imp_dev([1,2])
+print(result)
+
+
 """3. Primero más longitud: crea una función que acepte una lista y devuelva la suma del
     primer valor de la lista, más la longitud de la lista.
     O Ejemplo: primero_mas _longitud([1,2,3,4,5]) debe devolver 6 (primer valor: +length: 5)"""
@@ -31,6 +41,18 @@ def xyz(list):
     sumaList = list[0]+ len(list)
     print(sumaList)
 xyz(list)
+
+
+# Mejor opcion
+
+def primero_mas_longitud(lenght):
+    list1 = lenght[0]
+    list2 = len(lenght)
+    result = list1+list2
+    return result
+
+resultTotal = primero_mas_longitud([1,2,3,4,5])
+print(resultTotal)
 
 """4. Valores mayores que el segundo: escribe una función que acepte una lista y cree una
     nueva que contenga solo los valores de la lista original que sean mayores que su
@@ -54,6 +76,21 @@ def x(list):
 result = x(initialList)
 print(initialList[2])
 print(result)
+
+# Mejor opcion
+
+def valores_mayores_que_el_segundo(mayor):
+    list = mayor[1]
+    x = []
+    for a in mayor:
+        if a > list:
+            x.append(a)
+    print(len(x))
+    if len(x) > 2:
+        return x
+    else: return False
+
+print(valores_mayores_que_el_segundo([5,2,3,2,1,4]))
 
 """5. Esta longitud, ese valor: escribe una función que acepte dos enteros como
     parámetros: tamaño y valor. La función debe crear y devolver una lista cuya longitud
